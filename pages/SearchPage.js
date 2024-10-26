@@ -1,7 +1,7 @@
 class SearchPage {
   constructor(page) {
       this.page = page;
-      this.searchButton = page.locator('button.algoliaSearchBox-submit-3Vv');
+      this.searchButton = page.locator('button.algoliaSearchBox-submit-3Vv'); // the locator keeps switching between 2 different locators :)
       this.searchInput = page.locator('input.algoliaSearchBox-input-1IL'); // Regular mode locator
   }
 

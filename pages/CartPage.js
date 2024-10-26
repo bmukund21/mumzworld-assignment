@@ -6,18 +6,18 @@ class CartPage {
   }
 
   async updateItemQuantity(quantity) {
-    // Log the count of elements found for debugging
+    // Log the count of elements
     console.log(await this.quantityInput.count());
     
     // Wait for the quantity input to be visible
     await this.quantityInput.waitFor({ state: 'visible' });
     await this.quantityInput.fill(quantity.toString());
-    await this.page.waitForTimeout(500); // Adjust as needed
+    await this.page.waitForTimeout(500); //
   }
 
   async proceedToCheckout() {
     await this.checkoutButton.click();
-    await this.page.waitForTimeout(500); // Adjust as needed
+    await this.page.waitForTimeout(500); //
   }
 }
 
